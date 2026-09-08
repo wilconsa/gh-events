@@ -10,8 +10,8 @@ jobs:
         uses: actions/checkout@v7
       - name: Install dependencies
         run: npm ci
- #     - name: Test code
- #       run: npm run test
+      - name: Test code
+        run: npm run test
       - name: Build code
         run: npm run build
       - name: Deploy project
