@@ -21,4 +21,14 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
   },
+  overrides: [
+    {
+      files: ['**/*.test.js', '**/*.test.jsx', '**/*.spec.js', '**/*.spec.jsx'],
+      globals: {
+        describe: 'readonly',
+        expect: 'readonly',
+        it: 'readonly',
+      },
+    },
+  ],
 };
